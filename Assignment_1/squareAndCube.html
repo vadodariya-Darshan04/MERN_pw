@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>square and cube</title>
+</head>
+<body>
+    <h3 style="color: red;"> Square and cube :<br>
+
+    <input type="text" id="val" placeholder="Enter the number">
+    <br>
+    <button type="submit" onclick="calSquare()">square</button>
+    <button type="submit" onclick="calCube()">cube</button>
+
+</body>
+
+<script>
+    function calSquare(){
+        let num = document.getElementById("val").value;
+        window.alert(`Square of ${num} is ${num*num}`);
+    }
+
+    function calCube(){
+        let num = document.getElementById("val").value;
+        window.alert(`Cube of ${num} is ${num*num*num}`);
+    }
+</script>
+
+
+</html>

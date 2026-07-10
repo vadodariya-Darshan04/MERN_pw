@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calC</title>
+</head>
+<body>
+    <h1 style="color: blue;">Calculator</h1>
+    <input type="text" id="val1" placeholder="Enter the first number"><br><br>
+    <input type="text" id="val2" placeholder="Enter the second number">
+<br><br>
+    <button type="submit" onclick="addVals()"">+</button>
+    <button type="submit" onclick="subVals()">-</button>
+    <button type="submit" onclick="divVals()">/</button>
+    <button type="submit" onclick="mulVals()">X</button>
+    <button type="submit" onclick="divVals()">%</button>
+<br><br>
+
+<div id="result">hellow</div>
+
+</body>
+
+    <script>
+        function addVals(){
+            let v1 = parseInt(document.getElementById("val1").value);
+            let v2 = parseInt(document.getElementById("val2").value);   
+            document.getElementById("result").innerHTML=v1+v2;
+        
+        }
+
+        function subVals(){
+            let v1 = parseInt(document.getElementById("val1").value);
+            let v2 = parseInt(document.getElementById("val2").value);   
+            document.getElementById("result").innerHTML=v1-v2;
+        
+        }
+
+        function mulVals(){
+            let v1 = parseInt(document.getElementById("val1").value);
+            let v2 = parseInt(document.getElementById("val2").value);   
+            document.getElementById("result").innerHTML=v1*v2;
+        
+        }
+
+        function divVals(){
+            let v1 = parseInt(document.getElementById("val1").value);
+            let v2 = parseInt(document.getElementById("val2").value);   
+            document.getElementById("result").innerHTML=v1/v2;
+        
+        }
+
+        function modVals(){
+            let v1 = parseInt(document.getElementById("val1").value);
+            let v2 = parseInt(document.getElementById("val2").value);   
+            document.getElementById("result").innerHTML=v1%v2;
+        
+        }
+    </script>
+
+</html>
